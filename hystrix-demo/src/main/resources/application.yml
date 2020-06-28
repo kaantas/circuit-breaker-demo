@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+hystrix:
+  command:
+    demo:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
