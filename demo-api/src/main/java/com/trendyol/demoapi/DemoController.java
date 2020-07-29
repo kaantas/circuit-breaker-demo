@@ -11,7 +11,7 @@ public class DemoController {
     @GetMapping
     public String getDemo() throws InterruptedException {
         long startTime = System.nanoTime();
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         long endTime = System.nanoTime();
         long duration = (endTime - startTime) / 1000000;
         return "Demo Duration: " + duration + " ms";
